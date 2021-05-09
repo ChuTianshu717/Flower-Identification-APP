@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo_new"
+        tools:ignore="ContentDescription" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/camera_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/xiangji"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/album_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/xiangce" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/baike_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="center"
+        android:background="#FFFF"
+        android:src="@drawable/baikepage" />
+
+</LinearLayout>

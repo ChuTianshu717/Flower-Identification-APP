@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.tflitecamerademo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialTheme">
+
+
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3GCV8nsZpZEN5ikPp0VASwL8BB7VdqIm" />
+
+        <activity android:name=".encyclopedia"/>
+        <activity android:name=".ChoosePhoto" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".pedia.pedia1"/>
+        <activity android:name=".pedia.pedia2"/>
+        <activity android:name=".pedia.pedia3"/>
+        <activity android:name=".pedia.pedia4"/>
+        <activity android:name=".pedia.pedia5"/>
+        <activity android:name=".pedia.pedia6"/>
+        <activity android:name=".pedia.pedia7"/>
+        <activity android:name=".pedia.pedia8"/>
+        <activity android:name=".pedia.pedia9"/>
+        <activity android:name=".pedia.pedia10"/>
+        <activity android:name=".history.history1"/>
+        <activity android:name=".history.history8"/>
+        <activity android:name=".cultivation.cultivation1"/>
+        <activity android:name=".cultivation.cultivation8"/>
+    </application>
+
+</manifest>
